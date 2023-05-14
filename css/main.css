@@ -100,7 +100,7 @@ h1 {
 }
 
 .btn {
-  padding: 1.2rem 1.6rem 1.3rem;
+  padding: 1.2rem 1.8rem 1.3rem;
   text-align: center;
   height: -moz-fit-content;
   height: fit-content;
@@ -153,6 +153,7 @@ nav {
 .hero__content {
   z-index: 20;
   position: absolute;
+  height: 100%;
   width: 100%;
   top: 50%;
   left: 50%;
