@@ -1,4 +1,4 @@
-### Net7 One-page portfolio website 
+### Danila Shokhin One-page website 
 - HTML
 - SCSS
 - Vanilla JS
