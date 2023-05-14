@@ -1,35 +1,16 @@
 body {
-	font-family: $font-default;
-	font-size: $fontSize-default;
-	padding: 2rem;
 	background-color: $clr-background;
 	color: $clr-light;
+	font-size: $fontSize-default;
+	font-family: "SF", sans-serif;
+}
+
+.container {
+	max-width: 1728px;
+	margin: auto;
+	padding: 0 4rem;
 }
 
 h1 {
-	font-size: $fontSize-Huge;
-	line-height: 90%;
-	margin-left: -.6rem;
-	margin-bottom: 3rem;
-}
-
-h2 {
-	font-size: $fontSize-M;
-	font-weight: 700;
-}
-
-h3 {
-	font-size: $fontSize-M;
-	font-weight: 700;
-}
-
-p {
-	line-height: 120%;
-}
-
-.box {
-	padding: 4rem;
-	background-color: $clr-box;
-	border-radius: $br-l;
-	overflow: hidden;
+	font-size: 9.6rem;
 }

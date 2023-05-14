@@ -1,10 +1,12 @@
 // Fonts ***
+$fontSize-button: 1.8rem;
+
 $font-default: SF;
 $fontSize-default: 1.6rem;
 $fontSize-Huge: 6.8rem;
 $fontSize-XXXL: 4.2rem;
 $fontSize-titleBanner: 4rem;
-$fontSize-XXL: 3.6rem;
+$fontSize-XXL: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 1.2784)), 3.6rem);
 $fontSize-XL: 3.2rem;
 $fontSize-L: 2.8rem;
 $fontSize-M: 2.4rem;
@@ -15,15 +17,16 @@ $fontSize-XXXS: 1.4rem;
 $fontSize-Tiny: 1.2rem;
 
 // Colors ***
+$clr-background: #0D0D0D;
+$clr-dark: black;
+$clr-light: white;
+
 $clr-primary: #64DA72;
 $clr-secondary: #E4E195;
-$clr-background: #1A1A1A;
 $clr-box: #262626;
 $clr-boxHover: #2f2f2f;
 $clr-toggle: #4c4c4c;
 $clr-dashed: #3E6D44;
-$clr-dark: black;
-$clr-light: white;
 $clr-baseDark: #3B3B3B;
 $clr-baseNormal: #A8A8A8;
 $clr-baseLight: #BEBEBE;

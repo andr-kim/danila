@@ -1,23 +1,17 @@
 .btn {
-	color: $clr-primary;
-	border: .2rem solid $clr-primary;
-	padding: 1rem 2.2rem 1.2rem;
-	font-size: 2.4rem;
-	font-weight: 300;
+	padding: 1.2rem 1.6rem 1.3rem;
+	text-align: center;
+	height: fit-content;
 	width: fit-content;
-	transition: color ease-in-out 300ms, background-color ease-in-out 300ms;
-	border-radius: $br-xl;
-
-	&:hover {
-		background-color: $clr-primary;
-		color: $clr-dark;
-	}
+	border-radius: 10rem;
+	font-size: $fontSize-button;
+	font-weight: 400;
 }
 
-.btn-secondary {
-	background-color: $clr-light;
-	border: none;
-	color: $clr-dark;
-	font-size: $fontSize-M;
-	font-weight: 600;
+.btn--primary {
+	border: solid .2rem white;
+}
+
+.btn--secondary {
+	background-color: #6015FF;
 }
