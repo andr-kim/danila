@@ -1,5 +1,4 @@
 .btn {
-	padding: 1.2rem 1.8rem 1.3rem;
 	text-align: center;
 	height: fit-content;
 	width: fit-content;
@@ -10,9 +9,16 @@
 
 .btn--primary {
 	border: solid .2rem white;
+	padding: .8rem 1.3rem .9rem;
+	margin-left: auto;
 }
 
 .btn--secondary {
-	background-color: #6015FF;
+	padding: 1.6rem 2.4rem 1.7rem;
+	background-color: $clr-primary;
 	font-size: 2.4rem;
+
+	&:hover {
+		background-color: #6e32f2;
+	}
 }

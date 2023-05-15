@@ -107,7 +107,6 @@ h1 {
 }
 
 .btn {
-  padding: 1.2rem 1.8rem 1.3rem;
   text-align: center;
   height: -moz-fit-content;
   height: fit-content;
@@ -120,11 +119,17 @@ h1 {
 
 .btn--primary {
   border: solid 0.2rem white;
+  padding: 0.8rem 1.3rem 0.9rem;
+  margin-left: auto;
 }
 
 .btn--secondary {
+  padding: 1.6rem 2.4rem 1.7rem;
   background-color: #6015FF;
   font-size: 2.4rem;
+}
+.btn--secondary:hover {
+  background-color: #6e32f2;
 }
 
 header {
@@ -135,7 +140,7 @@ header {
 
 .header__container {
   display: grid;
-  grid-template-columns: max-content 1fr max-content;
+  grid-template-columns: 1fr 2fr 1fr;
   justify-content: space-between;
   padding: 2rem clamp(2rem, 2rem + (1vw - 0.32rem) * 2.8409, 6rem);
 }
@@ -144,12 +149,21 @@ nav {
   display: flex;
   gap: clamp(2rem, 2rem + (1vw - 0.32rem) * 1.4205, 4rem);
   justify-content: center;
-  margin-top: 1.7rem;
+  margin-top: 1.3rem;
   font-size: 1.8rem;
 }
 
 .logo {
   width: 10rem;
+}
+
+.navlink {
+  height: -moz-fit-content;
+  height: fit-content;
+  transition: color 300ms ease-in-out;
+}
+.navlink:hover {
+  color: #6015FF;
 }
 
 .hero {
