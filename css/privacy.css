@@ -92,11 +92,12 @@ body {
 .container {
   max-width: 1728px;
   margin: auto;
-  padding: 0 4rem;
+  padding: 0 clamp(2rem, 2rem + (1vw - 0.32rem) * 2.8409, 6rem);
 }
 
 h1 {
-  font-size: 9.6rem;
+  font-size: clamp(4.8rem, 4.8rem + (1vw - 0.32rem) * 3.4091, 9.6rem);
+  text-align: center;
 }
 
 header {
@@ -107,7 +108,7 @@ header {
 
 .header__container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr max-content 1fr;
   justify-content: space-between;
   padding: 2rem clamp(2rem, 2rem + (1vw - 0.32rem) * 2.8409, 6rem);
 }
@@ -130,4 +131,13 @@ nav {
 }
 .navlink:hover {
   color: #6015FF;
+}
+
+@media (max-width: 1150px) {
+  nav {
+    display: none;
+  }
+  .header__container {
+    grid-template-columns: max-content max-content;
+  }
 }/*# sourceMappingURL=privacy.css.map */

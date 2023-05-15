@@ -3,17 +3,18 @@ $font-default: SF;
 $fontSize-default: 1.6rem;
 $fontSize-button: 1.8rem;
 $fontSize-Huge: clamp(4.8rem, calc(4.8rem + ((1vw - 0.32rem) * 3.4091)), 9.6rem);
+$fontSize-XL: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.9943)), 3.2rem);
+$fontSize-XS: 1.8rem;
 
 
 
 $fontSize-XXXL: 4.2rem;
 $fontSize-titleBanner: 4rem;
 $fontSize-XXL: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 1.2784)), 3.6rem);
-$fontSize-XL: 3.2rem;
+
 $fontSize-L: 2.8rem;
 $fontSize-M: 2.4rem;
 $fontSize-S: 2rem;
-$fontSize-XS: 1.8rem;
 $fontSize-XXS: 1.6rem;
 $fontSize-XXXS: 1.4rem;
 $fontSize-Tiny: 1.2rem;
@@ -26,8 +27,9 @@ $clr-dark: black;
 $clr-light: white;
 
 // Breakpoints ***
-$breakpoint-xxl: 1440px;
-$breakpoint-xl: 1280px;
+$breakpoint-huge: 1440px;
+$breakpoint-xxl: 1280px;
+$breakpoint-xl: 1150px;
 $breakpoint-l: 1024px;
 $breakpoint-m: 767px;
 $breakpoint-s: 600px;

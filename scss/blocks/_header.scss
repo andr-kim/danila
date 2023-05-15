@@ -6,7 +6,7 @@ header {
 
 .header__container {
 	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-columns: 1fr max-content 1fr;
 	justify-content: space-between;
 	padding: 2rem clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 2.8409)), 6rem);
 }
@@ -16,7 +16,7 @@ nav {
 	gap: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.4205)), 4rem);
 	justify-content: center;
 	margin-top: 1.3rem;
-	font-size: 1.8rem;
+	font-size: $fontSize-XS;
 }
 
 .logo {
@@ -29,5 +29,15 @@ nav {
 
 	&:hover {
 		color: $clr-primary;
+	}
+}
+
+@include tablet-l {
+	nav {
+		display: none;
+	}
+
+	.header__container {
+		grid-template-columns: max-content max-content;
 	}
 }

@@ -8,9 +8,10 @@ body {
 .container {
 	max-width: 1728px;
 	margin: auto;
-	padding: 0 4rem;
+	padding: 0 clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 2.8409)), 6rem);
 }
 
 h1 {
-	font-size: 9.6rem;
+	font-size: $fontSize-Huge;
+	text-align: center;
 }
