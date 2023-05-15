@@ -93,7 +93,7 @@ body {
   background-color: #0D0D0D;
   color: white;
   font-size: 1.6rem;
-  font-family: "SF", sans-serif;
+  font-family: SF;
 }
 
 .container {
@@ -108,9 +108,7 @@ h1 {
 
 .btn {
   text-align: center;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   border-radius: 10rem;
   font-size: 1.8rem;
@@ -163,7 +161,6 @@ nav {
 }
 
 .navlink {
-  height: -moz-fit-content;
   height: fit-content;
   transition: color 300ms ease-in-out;
 }
@@ -178,8 +175,7 @@ nav {
 }
 
 video {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -191,7 +187,7 @@ video {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.9);
   gap: 2rem;
 }
 .hero__content p {

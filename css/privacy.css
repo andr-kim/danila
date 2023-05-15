@@ -86,7 +86,7 @@ body {
   background-color: #0D0D0D;
   color: white;
   font-size: 1.6rem;
-  font-family: "SF", sans-serif;
+  font-family: SF;
 }
 
 .container {
@@ -125,7 +125,6 @@ nav {
 }
 
 .navlink {
-  height: -moz-fit-content;
   height: fit-content;
   transition: color 300ms ease-in-out;
 }

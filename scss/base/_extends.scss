@@ -10,10 +10,3 @@
 	grid-template-columns: repeat(2, 1fr);
 	gap: 2rem;
 }
-
-%border-dashed {
-	border: .1rem dashed $clr-dashed;
-	padding: 3rem;
-	border-radius: $br-s;
-	@extend %flex-center;
-}
