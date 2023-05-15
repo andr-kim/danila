@@ -1,9 +1,11 @@
 // Fonts ***
-$fontSize-button: 1.8rem;
-
 $font-default: SF;
 $fontSize-default: 1.6rem;
-$fontSize-Huge: 6.8rem;
+$fontSize-button: 1.8rem;
+$fontSize-Huge: clamp(4.8rem, calc(4.8rem + ((1vw - 0.32rem) * 3.4091)), 9.6rem);
+
+
+
 $fontSize-XXXL: 4.2rem;
 $fontSize-titleBanner: 4rem;
 $fontSize-XXL: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 1.2784)), 3.6rem);
