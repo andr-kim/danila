@@ -213,9 +213,27 @@ video {
   font-size: clamp(1.8rem, 1.8rem + (1vw - 0.32rem) * 0.9943, 3.2rem);
   margin-bottom: 3rem;
 }
-.hero__content img {
+.hero__content .arrow-down {
   position: absolute;
   bottom: 6rem;
+}
+.hero__content .arrow-down:hover img {
+  transform: scale(1.1);
+}
+
+.progress__bottom {
+  display: grid;
+  width: 100%;
+  grid-template-columns: max-content max-content max-content;
+  margin-top: 8rem;
+  justify-content: space-between;
+}
+
+.progress__bottom__item {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 1rem;
 }
 
 .progress__grid {
@@ -276,7 +294,7 @@ video {
 .progress__grid .timeline {
   background-color: #171717;
   width: 0.2rem;
-  height: 85%;
+  height: 87rem;
   position: absolute;
   z-index: -1;
 }

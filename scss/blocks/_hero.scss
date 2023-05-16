@@ -26,8 +26,27 @@ video {
 		margin-bottom: 3rem;
 	}
 
-	img {
+	.arrow-down {
 		position: absolute;
 		bottom: 6rem;
+
+		&:hover img {
+			transform: scale(1.1);
+		}
 	}
+}
+
+.progress__bottom {
+	display: grid;
+	width: 100%;
+	grid-template-columns: max-content max-content max-content;
+	margin-top: 8rem;
+	justify-content: space-between;
+}
+
+.progress__bottom__item {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	align-items: center;
+	gap: 1rem;
 }
