@@ -4,11 +4,18 @@
 	grid-template-columns: 1fr max-content 1fr;
 	gap: 8rem;
 
-	div:nth-child(1) {
+	.progress__col {
 		display: flex;
 		flex-direction: column;
-		align-items: end;
 		gap: 1.5rem;
+
+		&--first {
+			align-items: end;
+		}
+
+		&--second {
+			align-items: start;
+		}
 	}
 
 	.year {
@@ -21,11 +28,13 @@
 		background-clip: text;
 		text-fill-color: transparent;
 		margin-top: -.7rem;
+		width: fit-content;
 	}
 
 	.desc {
 		color: $clr-baseNormal;
 		font-size: 1.8rem;
+		font-weight: 400;
 	}
 
 	.progress__images {
@@ -47,7 +56,7 @@
 		}
 	}
 	
-	div:nth-child(2) {
+	.timeline__wrap {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -56,7 +65,9 @@
 	.timeline {
 		background-color: $clr-baseDark;
 		width: .2rem;
-		height: 100%;
+		height: 85%;
+		position: absolute;
+		z-index: -1;
 	}
 
 	.large-img {
@@ -67,3 +78,4 @@
 		object-position: center;
 	}
 }
+
