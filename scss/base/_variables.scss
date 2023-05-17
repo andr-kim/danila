@@ -27,8 +27,10 @@ $clr-background: #0D0D0D;
 $clr-dark: black;
 $clr-light: white;
 $clr-baseUltraDark: #171717;
-$clr-BaseDark: #252525;
+$clr-baseDark: #252525;
 $clr-baseNormal: #a2a1a1;
+$clr-metallHorizont: linear-gradient(90deg, #E4F0FF 0%, #E2EEFC 35%, #DBE7F5 50%, #D1DBE9 61%, #C1CBD7 70%, #ADB5C0 78%, #949AA4 85%, #767A82 92%, #55575C 98%, #48494D 100%);
+$clr-metallVertical: linear-gradient(180deg, #E4F0FF 0%, #E2EEFC 35%, #DBE7F5 50%, #D1DBE9 61%, #C1CBD7 70%, #ADB5C0 78%, #949AA4 85%, #767A82 92%, #55575C 98%, #48494D 100%);
 
 // Breakpoints ***
 $breakpoint-huge: 1440px;

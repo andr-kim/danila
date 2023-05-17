@@ -17,5 +17,19 @@
 }
 
 %section-line {
-	border-top: .2rem solid $clr-BaseDark;
+	border-top: .2rem solid $clr-baseDark;
+}
+
+%text-gradientHorizont {
+	background: $clr-metallHorizont;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+%text-gradientVertical {
+	background: $clr-metallVertical;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
 }
