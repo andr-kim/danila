@@ -94,7 +94,7 @@ textarea {
   justify-content: center;
 }
 
-.mission, .about {
+.specialization, .mission, .about {
   border-top: 0.2rem solid #252525;
 }
 
@@ -361,4 +361,16 @@ video {
   width: 65ch;
   line-height: 130%;
   font-weight: 300;
+}
+
+.specialization p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #a2a1a1;
+  line-height: 150%;
+}
+
+.specialization__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
 }/*# sourceMappingURL=main.css.map */
