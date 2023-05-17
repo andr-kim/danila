@@ -1,9 +1,0 @@
-div {
-	display: grid;
-	grid-template-columns: max-content 1fr max-content;
-
-	div:last-of-type {
-		display: flex;
-		align-items: center;
-	}
-}

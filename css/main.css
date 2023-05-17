@@ -82,11 +82,20 @@ textarea {
   font-family: inherit;
 }
 
+.about__text__item, .about__text__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.about {
+  border-top: 0.2rem solid #252525;
 }
 
 body {
@@ -304,4 +313,30 @@ video {
   height: 35rem;
   object-fit: cover;
   object-position: center;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+.about__grid img {
+  border-radius: 2rem;
+  height: 100%;
+}
+
+.about__text__wrap {
+  gap: 2rem;
+}
+
+.about__text__item {
+  gap: 1rem;
+}
+.about__text__item b, .about__text__item p {
+  font-size: 1.8rem;
+}
+.about__text__item p {
+  color: #a2a1a1;
+  line-height: 140%;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */

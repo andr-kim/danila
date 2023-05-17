@@ -1,0 +1,34 @@
+.about {
+	@extend %section-line;
+}
+
+.about__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 5rem;
+
+	img {
+		border-radius: 2rem;
+		height: 100%
+	}
+}
+
+.about__text__wrap {
+	@extend %flex-standart;
+	gap: 2rem;
+}
+
+.about__text__item {
+	@extend %flex-standart;
+	gap: 1rem;
+
+	b, p {
+		font-size: 1.8rem;
+	}
+
+	p {
+		color: $clr-baseNormal;
+		line-height: 140%;
+		font-weight: 300;
+	}
+}
