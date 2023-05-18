@@ -1,0 +1,40 @@
+.plus {
+	@extend %section-line;
+
+	&__grid {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr 1fr;
+		gap: 1rem;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: $clr-baseUltraDark;
+		border-radius: 2rem;
+		padding: 2rem;
+
+		span {
+			font-size: 1.8rem;
+			font-weight: 800;
+			@extend %text-gradientHorizont;
+			width: fit-content;
+			padding: .8rem;
+
+			border: solid .2rem grey;
+			border-radius: 10rem;
+		}
+
+		div {
+			margin-top: 4rem;
+			display: grid;
+			gap: 1rem;
+			grid-template-columns: 1fr max-content;
+			align-items: end;
+		}
+	}
+}
+
