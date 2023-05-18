@@ -12,4 +12,40 @@
 .specialization__grid {
 	display: grid;
 	grid-template-columns: 1.5fr 1fr;
+	gap: 5rem;
+	height: 40rem;
+}
+
+.specialization__col:first-of-type {
+	overflow: auto;
+	padding-right: 2rem;
+
+	&::-webkit-scrollbar {
+		background-color: $clr-baseUltraDark;
+		width: .6rem;
+		border-radius: 10rem;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $clr-baseNormal;
+		border-radius: 10rem;
+	}
+}
+
+.specialization__col:last-of-type {
+	b {
+		font-size: 2.4rem;
+		@extend %text-gradientHorizont;
+		// margin-bottom: 5rem;
+	}
+
+	ul {
+		margin-top: 2rem;
+		list-style-type: none;
+
+		li {
+			line-height: 200%;
+			font-size: 2rem;
+		}
+	}
 }

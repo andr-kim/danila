@@ -98,7 +98,7 @@ textarea {
   border-top: 0.2rem solid #252525;
 }
 
-.progress__grid .year {
+.specialization__col:last-of-type b, .progress__grid .year {
   background: linear-gradient(90deg, #E4F0FF 0%, #E2EEFC 35%, #DBE7F5 50%, #D1DBE9 61%, #C1CBD7 70%, #ADB5C0 78%, #949AA4 85%, #767A82 92%, #55575C 98%, #48494D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -373,4 +373,32 @@ video {
 .specialization__grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
+  gap: 5rem;
+  height: 40rem;
+}
+
+.specialization__col:first-of-type {
+  overflow: auto;
+  padding-right: 2rem;
+}
+.specialization__col:first-of-type::-webkit-scrollbar {
+  background-color: #171717;
+  width: 0.6rem;
+  border-radius: 10rem;
+}
+.specialization__col:first-of-type::-webkit-scrollbar-thumb {
+  background-color: #a2a1a1;
+  border-radius: 10rem;
+}
+
+.specialization__col:last-of-type b {
+  font-size: 2.4rem;
+}
+.specialization__col:last-of-type ul {
+  margin-top: 2rem;
+  list-style-type: none;
+}
+.specialization__col:last-of-type ul li {
+  line-height: 200%;
+  font-size: 2rem;
 }/*# sourceMappingURL=main.css.map */
