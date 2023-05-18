@@ -1,0 +1,63 @@
+.vision {
+	@extend %section-line;
+}
+
+.vision__quote {
+	font-size: 3.2rem;
+	font-weight: 800;
+	@extend %text-gradientHorizont;
+}
+
+.vision__grid {
+	margin-top: 4rem;
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1.5fr 1fr;
+	gap: 5rem;
+	height: 50rem;
+}
+
+.vision__col:first-of-type {
+	width: 100%;
+	overflow: auto;
+	padding-right: 2rem;
+
+	p {
+		font-size: 2rem;
+		font-weight: 300;
+		color: $clr-baseNormal;
+		line-height: 150%;
+	}
+
+	&::-webkit-scrollbar {
+		background-color: $clr-baseUltraDark;
+		width: .6rem;
+		border-radius: 10rem;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $clr-baseNormal;
+		border-radius: 10rem;
+	}
+}
+
+.vision__col:last-of-type {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+
+	img {
+		border-radius: 2rem;
+		height: 100%;
+		object-fit: cover;
+		
+		width: 100%;
+	}
+
+	img:last-of-type {
+		grid-column: 1 / 3;
+		max-height: 30rem;
+		width: 100%;
+		object-position: top;
+	}
+}
