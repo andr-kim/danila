@@ -1,0 +1,13 @@
+.transformation {
+	@extend %section-line;
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+
+		img {
+			border-radius: 2rem;
+		}
+	}
+}

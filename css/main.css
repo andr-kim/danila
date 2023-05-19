@@ -94,7 +94,7 @@ textarea {
   justify-content: center;
 }
 
-.plus, .vision, .style, .specialization, .mission, .about {
+.transformation, .plus, .vision, .style, .specialization, .mission, .about {
   border-top: 0.2rem solid #252525;
 }
 
@@ -550,4 +550,13 @@ video {
   gap: 1rem;
   grid-template-columns: 1fr max-content;
   align-items: end;
+}
+
+.transformation__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.transformation__grid img {
+  border-radius: 2rem;
 }/*# sourceMappingURL=main.css.map */
