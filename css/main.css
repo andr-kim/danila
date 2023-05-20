@@ -94,7 +94,7 @@ textarea {
   justify-content: center;
 }
 
-.transformation, .plus, .vision, .style, .specialization, .mission, .about {
+footer, .contacts, .transformation, .plus, .vision, .style, .specialization, .mission, .about {
   border-top: 0.2rem solid #252525;
 }
 
@@ -559,4 +559,49 @@ video {
 }
 .transformation__grid img {
   border-radius: 2rem;
+}
+
+.contacts a {
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: #a2a1a1;
+}
+.contacts a:last-of-type {
+  margin-top: 1rem;
+}
+
+.container__footer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  width: 100%;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.copyright a {
+  width: 8rem;
+}
+.copyright span {
+  font-size: 1.8rem;
+}
+
+.politics {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: #7542e4;
+  font-size: 1.8rem;
+}
+
+.networks {
+  display: flex;
+  gap: 1rem;
+  justify-self: end;
+  align-items: center;
+}
+.networks a:last-of-type {
+  margin-left: 4rem;
+  font-size: 1.8rem;
 }/*# sourceMappingURL=main.css.map */

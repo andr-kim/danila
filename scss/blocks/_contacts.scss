@@ -1,0 +1,13 @@
+.contacts {
+	@extend %section-line;
+
+	a {
+		font-size: 3.6rem;
+		font-weight: 600;
+		color: $clr-baseNormal;
+
+		&:last-of-type {
+			margin-top: 1rem;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+footer {
+	@extend %section-line;
+}
+
+.container__footer {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	width: 100%;
+}
+
+.copyright {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+
+	a {
+		width: 8rem;
+	}
+
+	span {
+		font-size: 1.8rem;
+	}
+}
+
+.politics {
+	text-decoration: underline;
+	text-underline-offset: 1rem;
+	color: $clr-secondary;
+	font-size: 1.8rem;
+}
+
+.networks {
+	display: flex;
+	gap: 1rem;
+	justify-self: end;
+	align-items: center;
+	
+	a:last-of-type {
+		margin-left: 4rem;
+		font-size: 1.8rem;
+	}
+}
