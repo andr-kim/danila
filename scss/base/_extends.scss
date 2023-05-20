@@ -16,9 +16,9 @@
 	gap: 2rem;
 }
 
-%grid-3col {
+%grid-2col {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: max-content 1fr;
 	gap: 2rem;
 	width: 100%;
 }

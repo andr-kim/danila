@@ -3,11 +3,16 @@
 
 	a {
 		font-size: 3.6rem;
-		font-weight: 600;
+		font-weight: 500;
 		color: $clr-baseNormal;
+		transition: color ease-in-out 300ms;
 
 		&:last-of-type {
 			margin-top: 1rem;
+		}
+
+		&:hover {
+			color: white;
 		}
 	}
 }
