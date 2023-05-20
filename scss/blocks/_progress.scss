@@ -1,3 +1,7 @@
+.progress {
+	@extend %section-lineNone;
+}
+
 .progress__grid {
 	width: 100%;
 	display: grid;

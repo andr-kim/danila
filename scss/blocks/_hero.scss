@@ -2,6 +2,8 @@
 	height: 100vh;
 	min-height: 60rem;
 	position: relative;
+
+	@extend %section-lineNone;
 }
 
 video {

@@ -18,6 +18,10 @@
 
 %section-line {
 	border-top: .2rem solid $clr-baseDark;
+
+	&None {
+		border-top: none;
+	}
 }
 
 %text-gradientHorizont {

@@ -94,8 +94,11 @@ textarea {
   justify-content: center;
 }
 
-footer, .contacts, .transformation, .plus, .vision, .style, .specialization, .mission, .about {
+footer, .contacts, section {
   border-top: 0.2rem solid #252525;
+}
+.progress, .hero {
+  border-top: none;
 }
 
 .plus__card span, .vision__quote, .style__col:last-of-type ul li span, .style__col:last-of-type b, .specialization__col:last-of-type b, .progress__grid .year {
