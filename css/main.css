@@ -99,6 +99,7 @@ textarea {
   grid-template-columns: max-content 1fr;
   gap: 2rem;
   width: 100%;
+  align-items: start;
 }
 
 footer, .contacts, section {
@@ -108,7 +109,7 @@ footer, .contacts, section {
   border-top: none;
 }
 
-.price__item:nth-child(2) div span, .price__item:first-of-type div:first-of-type span, .plus__card span, .vision__quote, .style__col:last-of-type ul li span, .style__col:last-of-type b, .specialization__col:last-of-type b, .progress__grid .year {
+.price__item:nth-child(2) div:first-of-type div span, .price__item:first-of-type div:first-of-type span, .plus__card span, .vision__quote, .style__col:last-of-type ul li span, .style__col:last-of-type b, .specialization__col:last-of-type b, .progress__grid .year {
   background: linear-gradient(90deg, #E4F0FF 0%, #E2EEFC 35%, #DBE7F5 50%, #D1DBE9 61%, #C1CBD7 70%, #ADB5C0 78%, #949AA4 85%, #767A82 92%, #55575C 98%, #48494D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -601,20 +602,35 @@ video {
   color: #7542e4;
   font-size: 1.8rem;
 }
-.price__item:nth-child(2) div {
+.price__item:nth-child(2) {
+  display: flex;
+  align-items: start;
+}
+.price__item:nth-child(2) div:first-of-type div {
   display: flex;
   align-items: center;
 }
-.price__item:nth-child(2) div span {
+.price__item:nth-child(2) div:first-of-type div span {
   font-size: 4.8rem;
   font-weight: 700;
   margin-left: -8rem;
 }
-.price__item:nth-child(2) p {
+.price__item:nth-child(2) div:first-of-type p {
   font-size: 2rem;
-  line-height: 180%;
+  line-height: 170%;
   margin-left: 15rem;
   color: #a2a1a1;
+}
+.price__item:nth-child(2) .price__var {
+  position: relative;
+  display: flex;
+  margin-top: 7rem;
+  margin-left: 2rem;
+}
+.price__item:nth-child(2) .price__var span {
+  position: absolute;
+  top: 3rem;
+  font-size: 2.4rem;
 }
 
 .contacts a {
