@@ -344,10 +344,11 @@ video {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
+  align-items: stretch;
 }
 .about__grid img {
   border-radius: 2rem;
-  height: 100%;
+  object-fit: cover;
 }
 
 .about__text__wrap {
@@ -518,10 +519,10 @@ video {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  align-items: stretch;
 }
 .vision__col:last-of-type img {
   border-radius: 2rem;
-  height: 100%;
   object-fit: cover;
   width: 100%;
 }

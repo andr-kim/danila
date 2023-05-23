@@ -41,10 +41,11 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
+	align-items: stretch;
 
 	img {
 		border-radius: 2rem;
-		height: 100%;
+		// height: 100%;
 		object-fit: cover;
 		
 		width: 100%;

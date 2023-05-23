@@ -2,10 +2,11 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 5rem;
+	align-items: stretch;
 
 	img {
 		border-radius: 2rem;
-		height: 100%
+		object-fit: cover
 	}
 }
 
