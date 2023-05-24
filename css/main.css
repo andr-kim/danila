@@ -121,7 +121,7 @@ footer, .contacts, section {
   height: 100%;
 }
 
-.about__text__item, .about__text__wrap, .progress__grid .timeline__wrap, .progress__grid .progress__col, .hero__content {
+.plus__card, .about__text__item, .about__text__wrap, .progress__grid .timeline__wrap, .progress__grid .progress__col, .hero__content {
   display: flex;
   flex-direction: column;
 }
@@ -129,6 +129,11 @@ footer, .contacts, section {
 .hero__content {
   align-items: center;
   justify-content: center;
+}
+
+.transformation__grid, .plus__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 body {
@@ -527,14 +532,10 @@ video {
 
 .plus__grid {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
 }
 .plus__card {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   background-color: #171717;
   border-radius: 2rem;
@@ -557,8 +558,6 @@ video {
 }
 
 .transformation__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 .transformation__grid img {

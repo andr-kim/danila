@@ -1,15 +1,13 @@
 .plus {
 	&__grid {
 		width: 100%;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		@extend %grid-3col;
 		grid-template-rows: 1fr 1fr;
 		gap: 1rem;
 	}
 
 	&__card {
-		display: flex;
-		flex-direction: column;
+		@extend %flex-standart;
 		justify-content: space-between;
 		background-color: $clr-baseUltraDark;
 		border-radius: 2rem;
@@ -21,7 +19,6 @@
 			@extend %text-gradientHorizont;
 			width: fit-content;
 			padding: .8rem;
-
 			border: solid .2rem grey;
 			border-radius: 10rem;
 		}

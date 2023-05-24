@@ -1,7 +1,6 @@
 .transformation {
 	&__grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		@extend %grid-3col;
 		gap: 2rem;
 
 		img {

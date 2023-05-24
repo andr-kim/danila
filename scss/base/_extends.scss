@@ -57,3 +57,8 @@
 	align-items: center;
 	justify-content: center;
 }
+
+%grid-3col {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
