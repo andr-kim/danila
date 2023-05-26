@@ -4,8 +4,7 @@
 	}
 
 	&__item:first-of-type {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		@extend %grid-2;
 		align-items: center;
 
 		div:first-of-type {

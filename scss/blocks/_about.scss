@@ -1,6 +1,5 @@
 .about__grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	@extend %grid-2;
 	gap: 5rem;
 	align-items: stretch;
 
