@@ -82,27 +82,6 @@ textarea {
   font-family: inherit;
 }
 
-footer, .contacts, section {
-  border-top: 0.2rem solid #252525;
-}
-.progress, .hero {
-  border-top: none;
-}
-
-.price__item:nth-child(2) div:first-of-type div span, .price__item:first-of-type div:first-of-type span, .plus__card span, .vision__quote, .style__col:last-of-type ul li span, .style__col:last-of-type b, .specialization__col:last-of-type b, .progress__grid .year {
-  background: linear-gradient(90deg, #E4F0FF 0%, #E2EEFC 35%, #DBE7F5 50%, #D1DBE9 61%, #C1CBD7 70%, #ADB5C0 78%, #949AA4 85%, #767A82 92%, #55575C 98%, #48494D 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.mission p {
-  background: linear-gradient(180deg, #E4F0FF 0%, #E2EEFC 35%, #DBE7F5 50%, #D1DBE9 61%, #C1CBD7 70%, #ADB5C0 78%, #949AA4 85%, #767A82 92%, #55575C 98%, #48494D 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 .hero {
   height: 100vh;
   min-height: 60rem;
@@ -131,6 +110,27 @@ footer, .contacts, section {
 .price__item:first-of-type, .about__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+footer, .contacts, section {
+  border-top: 0.2rem solid #252525;
+}
+.progress, .hero {
+  border-top: none;
+}
+
+.price__item:nth-child(2) div:first-of-type div span, .price__item:first-of-type div:first-of-type span, .plus__card span, .vision__quote, .style__col:last-of-type ul li span, .style__col:last-of-type b, .specialization__col:last-of-type b, .progress__grid .year {
+  background: linear-gradient(90deg, #E4F0FF 0%, #E2EEFC 35%, #DBE7F5 50%, #D1DBE9 61%, #C1CBD7 70%, #ADB5C0 78%, #949AA4 85%, #767A82 92%, #55575C 98%, #48494D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mission p {
+  background: linear-gradient(180deg, #E4F0FF 0%, #E2EEFC 35%, #DBE7F5 50%, #D1DBE9 61%, #C1CBD7 70%, #ADB5C0 78%, #949AA4 85%, #767A82 92%, #55575C 98%, #48494D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 body {
