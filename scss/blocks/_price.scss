@@ -1,10 +1,14 @@
 .price {
 	&__grid {
-		@extend %grid-2col;
+		display: grid;
+		grid-template-columns: max-content 1fr;
+		gap: 2rem;
+		width: 100%;
+		align-items: start;
 	}
 
 	&__item:first-of-type {
-		@extend %grid-2;
+		@extend %grid-2col;
 		align-items: center;
 
 		div:first-of-type {

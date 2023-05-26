@@ -1,11 +1,3 @@
-%grid-2col {
-	display: grid;
-	grid-template-columns: max-content 1fr;
-	gap: 2rem;
-	width: 100%;
-	align-items: start;
-}
-
 %section-line {
 	border-top: .2rem solid $clr-baseDark;
 
@@ -57,7 +49,7 @@
 	grid-template-columns: repeat(3, 1fr);
 }
 
-%grid-2 {
+%grid-2col {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
