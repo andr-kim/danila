@@ -9,8 +9,7 @@ body {
 	max-width: 1440px;
 	margin: auto;
 	padding: 8rem clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.4205)), 4rem) 12rem;
-	display: flex;
-	flex-direction: column;
+	@extend %flex-standart;
 	align-items: center;
 }
 

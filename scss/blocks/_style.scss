@@ -31,8 +31,7 @@
 }
 
 .style__photo-wrap {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	@extend %grid-3col;
 	gap: 1rem;
 	margin-bottom: 4rem;
 

@@ -8,8 +8,6 @@ $fontSize-XL: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.9943)), 3.2rem);
 $fontSize-XS: 1.8rem;
 
 
-
-
 $fontSize-titleBanner: 4rem;
 $fontSize-XXL: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 1.2784)), 3.6rem);
 
@@ -31,6 +29,7 @@ $clr-baseDark: #252525;
 $clr-baseNormal: #a2a1a1;
 $clr-metallHorizont: linear-gradient(90deg, #E4F0FF 0%, #E2EEFC 35%, #DBE7F5 50%, #D1DBE9 61%, #C1CBD7 70%, #ADB5C0 78%, #949AA4 85%, #767A82 92%, #55575C 98%, #48494D 100%);
 $clr-metallVertical: linear-gradient(180deg, #E4F0FF 0%, #E2EEFC 35%, #DBE7F5 50%, #D1DBE9 61%, #C1CBD7 70%, #ADB5C0 78%, #949AA4 85%, #767A82 92%, #55575C 98%, #48494D 100%);
+$clr-backgroundTransparent: rgba(0,0,0,.3);
 
 // Breakpoints ***
 $breakpoint-huge: 1440px;

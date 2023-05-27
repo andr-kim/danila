@@ -38,8 +38,7 @@
 }
 
 .vision__col:last-of-type {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	@extend %grid-2col;
 	gap: 1rem;
 	align-items: stretch;
 
