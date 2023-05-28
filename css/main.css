@@ -340,6 +340,7 @@ video {
   align-items: stretch;
 }
 .about__grid img {
+  height: 100%;
   border-radius: 2rem;
   object-fit: cover;
 }
