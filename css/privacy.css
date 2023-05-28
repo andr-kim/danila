@@ -82,6 +82,11 @@ textarea {
   font-family: inherit;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 footer, section {
   border-top: 0.2rem solid #252525;
 }
@@ -96,8 +101,6 @@ body {
   max-width: 1440px;
   margin: auto;
   padding: 8rem clamp(2rem, 2rem + (1vw - 0.32rem) * 1.4205, 4rem) 12rem;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
