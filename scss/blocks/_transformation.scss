@@ -4,7 +4,7 @@
 		gap: 2rem;
 
 		img {
-			border-radius: 2rem;
+			@extend %b-radiusM;
 		}
 	}
 }

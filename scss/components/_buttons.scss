@@ -2,7 +2,7 @@
 	@extend %text-center;
 	height: fit-content;
 	width: fit-content;
-	border-radius: 10rem;
+	@extend %b-radiusXL;
 	font-size: $fontSize-button;
 	font-weight: 400;
 	transition: background-color ease-in-out 300ms;

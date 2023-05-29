@@ -14,12 +14,12 @@
 	&::-webkit-scrollbar {
 		background-color: $clr-baseUltraDark;
 		width: .6rem;
-		border-radius: 10rem;
+		@extend %b-radiusXL;
 	}
 
 	&::-webkit-scrollbar-thumb {
 		background-color: $clr-baseNormal;
-		border-radius: 10rem;
+		@extend %b-radiusXL;
 	}
 
 	p {
@@ -37,7 +37,7 @@
 
 	img {
 		width: 100%;
-		border-radius: 2rem;
+		@extend %b-radiusM;
 	}
 }
 

@@ -1,10 +1,7 @@
 .price {
 	&__grid {
-		display: grid;
-		grid-template-columns: max-content 1fr;
-		gap: 2rem;
+		@include layout-grid(max-content 1fr, 2rem, start);
 		width: 100%;
-		align-items: start;
 	}
 
 	&__item:first-of-type {
@@ -12,8 +9,7 @@
 		align-items: center;
 
 		div:first-of-type {
-			display: flex;
-			align-items: center;
+			@include layout-flex(row, 0, center);
 
 			span {
 				font-size: 4.8rem;
@@ -41,13 +37,11 @@
 	}
 
 	&__item:nth-child(2) {
-		display: flex;
-		align-items: start;
+		@include layout-flex(row, 0, start);
 
 		div:first-of-type {
 			div {
-				display: flex;
-				align-items: center;
+				@include layout-flex(row, 0, center);
 
 				span {
 					font-size: 4.8rem;
@@ -66,9 +60,8 @@
 		}
 
 		.price__var {
-
+			@extend %d-flex;
 			position: relative;
-			display: flex;
 			margin-top: 7rem;
 			margin-left: 2rem;
 			span {

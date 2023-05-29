@@ -45,7 +45,7 @@
 				max-height: 22rem;
 	
 				img {
-					border-radius: 2rem;
+					@extend %b-radiusM;
 					object-fit: cover;
 					object-position: center;
 					height: 100%;
@@ -67,7 +67,7 @@
 		}
 	
 		.large-img {
-			border-radius: 2rem;
+			@extend %b-radiusM;
 			width: 100%;
 			height: 35rem;
 			object-fit: cover;

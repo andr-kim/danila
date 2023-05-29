@@ -10,7 +10,7 @@
 		@extend %flex-standart;
 		justify-content: space-between;
 		background-color: $clr-baseUltraDark;
-		border-radius: 2rem;
+		@extend %b-radiusM;
 		padding: 2rem;
 
 		span {
@@ -20,15 +20,12 @@
 			width: fit-content;
 			padding: .8rem;
 			border: solid .2rem grey;
-			border-radius: 10rem;
+			@extend %b-radiusXL;
 		}
 
 		div {
 			margin-top: 4rem;
-			display: grid;
-			gap: 1rem;
-			grid-template-columns: 1fr max-content;
-			align-items: end;
+			@include layout-grid(1fr max-content, 1rem, end);
 		}
 	}
 }

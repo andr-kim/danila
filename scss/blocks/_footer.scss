@@ -3,16 +3,13 @@ footer {
 }
 
 .container__footer {
-	display: grid;
-	grid-template-columns: 1fr auto 1fr;
+	@include layout-grid(1fr auto 1fr);
 	width: 100%;
 }
 
 .copyright {
-	display: flex;
-	align-items: center;
-	gap: 3rem;
-
+	@include layout-flex(row, 3rem, center);
+	
 	a {
 		width: 8rem;
 	}
@@ -30,10 +27,8 @@ footer {
 }
 
 .networks {
-	display: flex;
-	gap: 1rem;
+	@include layout-flex(row, 1rem, center);
 	justify-self: end;
-	align-items: center;
 	
 	a:last-of-type {
 		margin-left: 4rem;

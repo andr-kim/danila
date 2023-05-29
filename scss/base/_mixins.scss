@@ -1,0 +1,15 @@
+@mixin layout-grid($grid-template-columns, $gap: 0, $align-items: stretch) {
+	@extend %d-grid;
+
+	grid-template-columns: $grid-template-columns;
+	gap: $gap;
+	align-items: $align-items;
+}
+
+@mixin layout-flex($flex-direction, $gap: 0, $align-items: stretch) {
+	@extend %d-flex;
+
+	flex-direction: $flex-direction;
+	gap: $gap;
+	align-items: $align-items;
+}
