@@ -15,11 +15,11 @@ body {
 
 h1 {
 	font-size: $fontSize-Huge;
-	text-align: center;
+	@extend %text-center;
 }
 
 h2 {
-	text-align: center;
+	@extend %text-center;
 	font-size: $fontSize-XXXL;
 	font-weight: 700;
 	margin-bottom: 4rem;

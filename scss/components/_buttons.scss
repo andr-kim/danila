@@ -1,5 +1,5 @@
 .btn {
-	text-align: center;
+	@extend %text-center;
 	height: fit-content;
 	width: fit-content;
 	border-radius: 10rem;
