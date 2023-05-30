@@ -1,0 +1,7 @@
+.link {
+	@extend %link;
+
+	&--secondary {
+		margin-top: 3rem;
+	}
+}

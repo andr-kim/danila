@@ -19,13 +19,6 @@ footer {
 	}
 }
 
-.politics {
-	text-decoration: underline;
-	text-underline-offset: 1rem;
-	color: $clr-secondary;
-	font-size: 1.8rem;
-}
-
 .networks {
 	@include layout-flex(row, 1rem, center);
 	justify-self: end;

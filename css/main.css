@@ -152,6 +152,17 @@ footer, .contacts, section {
   display: flex;
 }
 
+.link {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: #6015FF;
+  font-size: 1.8rem;
+  transition: color ease-in-out 300ms;
+}
+.link:hover {
+  color: #7542e4;
+}
+
 body {
   background-color: #0D0D0D;
   color: white;
@@ -208,6 +219,10 @@ h3 {
   background-color: #7542e4;
 }
 
+.link--secondary {
+  margin-top: 3rem;
+}
+
 header {
   width: 100%;
   position: absolute;
@@ -243,6 +258,14 @@ nav {
   color: #6015FF;
 }
 
+@media (max-width: 1150px) {
+  .header__container {
+    grid-template-columns: 1fr max-content;
+  }
+  nav {
+    display: none;
+  }
+}
 .hero {
   position: relative;
 }
@@ -573,13 +596,6 @@ video {
   top: 3rem;
   font-size: 2.4rem;
 }
-.price__item:first-of-type a {
-  margin-top: 3rem;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  color: #7542e4;
-  font-size: 1.8rem;
-}
 .price__item:nth-child(2) {
   flex-direction: row;
   gap: 0;
@@ -641,13 +657,6 @@ video {
   width: 8rem;
 }
 .copyright span {
-  font-size: 1.8rem;
-}
-
-.politics {
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  color: #7542e4;
   font-size: 1.8rem;
 }
 

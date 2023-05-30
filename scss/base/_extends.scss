@@ -71,3 +71,15 @@
 %d-flex {
 	display: flex;
 }
+
+%link {
+	text-decoration: underline;
+	text-underline-offset: 1rem;
+	color: $clr-primary;
+	font-size: 1.8rem;
+	transition: color ease-in-out 300ms;
+
+	&:hover {
+		color: $clr-secondary;
+	}
+}
