@@ -7,9 +7,7 @@
 	}
 
 	&__grid {
-		display: grid;
-		grid-template-columns: 1.5fr 1fr;
-		gap: 5rem;
+		@include layout-grid(1.5fr 1fr, 5rem);
 		height: 40rem;
 	}
 

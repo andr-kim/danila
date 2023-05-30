@@ -1,8 +1,6 @@
 .style__grid {
-	display: grid;
+	@include layout-grid(1.5fr 1fr, 5rem);
 	width: 100%;
-	grid-template-columns: 1.5fr 1fr;
-	gap: 5rem;
 	height: 63rem;
 }
 
@@ -52,10 +50,9 @@
 		list-style-type: none;
 
 		li {
-			display: flex;
+			@include layout-flex(row, 1rem);
 			padding: 1rem 0;
 			border-top: .1rem solid $clr-baseNormal;
-			gap: 1rem;
 			font-size: 2rem;
 			font-weight: 400;
 

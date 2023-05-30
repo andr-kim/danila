@@ -5,11 +5,9 @@
 }
 
 .vision__grid {
-	margin-top: 4rem;
-	display: grid;
+	@include layout-grid(1.5fr 1fr, 5rem);
 	width: 100%;
-	grid-template-columns: 1.5fr 1fr;
-	gap: 5rem;
+	margin-top: 4rem;
 	height: 50rem;
 }
 

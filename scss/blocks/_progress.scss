@@ -2,10 +2,8 @@
 	@extend %section-lineNone;
 
 	&__grid {
+		@include layout-grid(1fr max-content 1fr, 8rem);
 		width: 100%;
-		display: grid;
-		grid-template-columns: 1fr max-content 1fr;
-		gap: 8rem;
 	
 		.progress__col {
 			@extend %flex-standart;
@@ -37,9 +35,7 @@
 	
 		.progress__images {
 			@extend %hundred-percent;
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 1rem;
+			@include layout-grid(1fr 1fr 1fr, 1rem);
 	
 			&__inner {
 				max-height: 22rem;
@@ -77,16 +73,12 @@
 }
 
 .progress__bottom {
-	display: grid;
+	@include layout-grid(max-content max-content max-content, 0);
 	width: 100%;
-	grid-template-columns: max-content max-content max-content;
 	margin-top: 8rem;
 	justify-content: space-between;
 
 	&__item {
-		display: grid;
-		grid-template-columns: max-content 1fr;
-		align-items: center;
-		gap: 1rem;
+		@include layout-grid(max-content 1fr, 1rem, center);
 	}
 }

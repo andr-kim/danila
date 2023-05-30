@@ -3,7 +3,7 @@ footer {
 }
 
 .container__footer {
-	@include layout-grid(1fr auto 1fr);
+	@include layout-grid(1fr auto 1fr, 0, center);
 	width: 100%;
 }
 

@@ -169,7 +169,7 @@ nav {
 .container__footer {
   grid-template-columns: 1fr auto 1fr;
   gap: 0;
-  align-items: stretch;
+  align-items: center;
   width: 100%;
 }
 
