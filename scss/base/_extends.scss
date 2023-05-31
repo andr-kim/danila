@@ -71,3 +71,9 @@
 %d-flex {
 	display: flex;
 }
+
+%animation-appearance {
+	animation-name: appearance;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}

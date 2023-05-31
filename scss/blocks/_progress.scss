@@ -31,6 +31,10 @@
 			color: $clr-baseNormal;
 			font-size: 1.8rem;
 			font-weight: 400;
+
+			&--end {
+				text-align: end
+			}
 		}
 	
 		.progress__images {
@@ -44,7 +48,7 @@
 					@extend %b-radiusM;
 					object-fit: cover;
 					object-position: center;
-					height: 100%;
+					@extend %hundred-percent;
 				}
 			}
 		}
@@ -80,5 +84,58 @@
 
 	&__item {
 		@include layout-grid(max-content 1fr, 1rem, center);
+	}
+}
+
+@include laptop {
+	.progress__images__inner {
+		height: 11rem;
+	}
+
+	.progress .large-img {
+		height: 24rem;
+	}
+}
+
+@include xl {
+	.progress__bottom__item img {
+		width: 6rem;
+	}
+}
+
+@include tablet-s {
+	.progress__images__inner {
+		height: 8.5rem;
+	}
+
+	.progress__bottom {
+		grid-template-columns: 1fr 1fr 1fr;
+		&__item {
+			display: flex;
+			gap: 2rem;
+			flex-direction: column;
+			justify-self: center;
+
+			img {
+				width: 10rem;
+			}
+		}
+
+		p {
+			text-align: center;
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+@include s {
+	.progress__images__inner {
+		height: 5rem;
+	}
+
+	.progress .large-img {
+		height: 20rem;
 	}
 }

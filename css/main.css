@@ -87,7 +87,7 @@ textarea {
   min-height: 60rem;
 }
 
-.progress__grid .progress__images, .hero__content, video {
+.progress__grid .progress__images__inner img, .progress__grid .progress__images, .hero__content, video {
   width: 100%;
   height: 100%;
 }
@@ -141,7 +141,7 @@ footer, .contacts, section {
   border-radius: 10rem;
 }
 .transformation__grid img, .plus__card, .vision__col:last-of-type img, .style__photo-wrap img, .about__grid img, .progress__grid .large-img, .progress__grid .progress__images__inner img {
-  border-radius: 2rem;
+  border-radius: clamp(0.2rem, 0.2rem + (1vw - 0.32rem) * 1.2784, 2rem);
 }
 
 .container__footer, .price__grid, .plus__card div, .vision__grid, .style__grid, .specialization__grid, .progress__bottom__item, .progress__bottom, .progress__grid .progress__images, .progress__grid, .header__container {
@@ -152,14 +152,18 @@ footer, .contacts, section {
   display: flex;
 }
 
-@keyframes fade-in {
+.hero__content, header, .btn--secondary {
+  animation-name: appearance;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes appearance {
   0% {
     opacity: 0;
-    font-size: 0;
   }
   100% {
     opacity: 1;
-    font-size: 1;
   }
 }
 body {
@@ -347,6 +351,9 @@ video {
   font-size: 1.8rem;
   font-weight: 400;
 }
+.progress__grid .desc--end {
+  text-align: end;
+}
 .progress__grid .progress__images {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
@@ -358,7 +365,6 @@ video {
 .progress__grid .progress__images__inner img {
   object-fit: cover;
   object-position: center;
-  height: 100%;
 }
 .progress__grid .timeline__wrap {
   align-items: center;
@@ -391,6 +397,50 @@ video {
   align-items: center;
 }
 
+@media (max-width: 1280px) {
+  .progress__images__inner {
+    height: 11rem;
+  }
+  .progress .large-img {
+    height: 24rem;
+  }
+}
+@media (max-width: 1190px) {
+  .progress__bottom__item img {
+    width: 6rem;
+  }
+}
+@media (max-width: 1024px) {
+  .progress__images__inner {
+    height: 8.5rem;
+  }
+  .progress__bottom {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .progress__bottom__item {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-self: center;
+  }
+  .progress__bottom__item img {
+    width: 10rem;
+  }
+  .progress__bottom p {
+    text-align: center;
+  }
+  .progress__bottom p br {
+    display: none;
+  }
+}
+@media (max-width: 880px) {
+  .progress__images__inner {
+    height: 5rem;
+  }
+  .progress .large-img {
+    height: 20rem;
+  }
+}
 .about__grid {
   gap: 5rem;
   align-items: stretch;

@@ -18,6 +18,7 @@ video {
 	left: 0;
 	background: $clr-backgroundTransparent;
 	gap: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.7102)), 2rem);
+	@extend %animation-appearance;
 
 	p {
 		font-size: $fontSize-XL;

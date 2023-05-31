@@ -35,11 +35,13 @@ $clr-backgroundTransparent: rgba(0,0,0,.3);
 // Breakpoints ***
 $breakpoint-huge: 1440px;
 $breakpoint-xxl: 1280px;
+$breakpoint-1190: 1190px;
 $breakpoint-xl: 1150px;
 $breakpoint-l: 1024px;
+$breakpoint-880: 880px;
 $breakpoint-m: 767px;
 $breakpoint-s: 600px;
 
 // Border Radius ***
 $br-l: 10rem;
-$br-s: 2rem;
+$br-s: clamp(0.2rem, calc(0.2rem + ((1vw - 0.32rem) * 1.2784)), 2rem);
