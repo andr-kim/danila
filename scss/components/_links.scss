@@ -1,7 +1,17 @@
 .link {
-	@extend %link;
+	text-decoration: underline;
+	text-underline-offset: 1rem;
+	color: $clr-primary;
+	font-size: 1.8rem;
+	transition: color ease-in-out 300ms;
 
 	&--secondary {
 		margin-top: 3rem;
+	}
+}
+
+@media (hover: hover) {
+	.link:hover {
+		color: $clr-secondary;
 	}
 }

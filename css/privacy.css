@@ -112,12 +112,12 @@ body {
 .container {
   max-width: 1440px;
   margin: auto;
-  padding: 8rem clamp(2rem, 2rem + (1vw - 0.32rem) * 1.4205, 4rem) 12rem;
+  padding: clamp(4rem, 4rem + (1vw - 0.32rem) * 2.8409, 8rem) clamp(2rem, 2rem + (1vw - 0.32rem) * 1.4205, 4rem) clamp(8rem, 8rem + (1vw - 0.32rem) * 2.8409, 12rem);
   align-items: center;
 }
 
 h1 {
-  font-size: clamp(4.8rem, 4.8rem + (1vw - 0.32rem) * 3.4091, 9.6rem);
+  font-size: clamp(3.6rem, 3.6rem + (1vw - 0.32rem) * 4.2614, 9.6rem);
 }
 
 h2 {
@@ -155,7 +155,7 @@ nav {
 }
 
 .logo {
-  width: 10rem;
+  width: clamp(6rem, 6rem + (1vw - 0.32rem) * 2.8409, 10rem);
 }
 
 .navlink {

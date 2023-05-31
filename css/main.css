@@ -152,17 +152,6 @@ footer, .contacts, section {
   display: flex;
 }
 
-.link {
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  color: #6015FF;
-  font-size: 1.8rem;
-  transition: color ease-in-out 300ms;
-}
-.link:hover {
-  color: #7542e4;
-}
-
 body {
   background-color: #0D0D0D;
   color: white;
@@ -173,12 +162,12 @@ body {
 .container {
   max-width: 1440px;
   margin: auto;
-  padding: 8rem clamp(2rem, 2rem + (1vw - 0.32rem) * 1.4205, 4rem) 12rem;
+  padding: clamp(4rem, 4rem + (1vw - 0.32rem) * 2.8409, 8rem) clamp(2rem, 2rem + (1vw - 0.32rem) * 1.4205, 4rem) clamp(8rem, 8rem + (1vw - 0.32rem) * 2.8409, 12rem);
   align-items: center;
 }
 
 h1 {
-  font-size: clamp(4.8rem, 4.8rem + (1vw - 0.32rem) * 3.4091, 9.6rem);
+  font-size: clamp(3.6rem, 3.6rem + (1vw - 0.32rem) * 4.2614, 9.6rem);
 }
 
 h2 {
@@ -195,34 +184,46 @@ h3 {
 .btn {
   height: fit-content;
   width: fit-content;
-  font-size: 1.8rem;
+  font-size: clamp(1.6rem, 1.6rem + (1vw - 0.32rem) * 0.142, 1.8rem);
   font-weight: 400;
   transition: background-color ease-in-out 300ms;
 }
-
 .btn--primary {
   border: solid 0.2rem white;
   padding: 0.8rem 1.3rem 0.9rem;
   margin-left: auto;
 }
-.btn--primary:hover {
-  background-color: #6015FF;
-  border-color: #6015FF;
-}
-
 .btn--secondary {
   padding: 1.6rem 2.4rem 1.7rem;
   background-color: #6015FF;
-  font-size: 2.4rem;
-}
-.btn--secondary:hover {
-  background-color: #7542e4;
+  font-size: clamp(1.8rem, 1.8rem + (1vw - 0.32rem) * 0.4261, 2.4rem);
 }
 
+@media (hover: hover) {
+  .btn--secondary:hover {
+    background-color: #7542e4;
+  }
+  .btn--primary:hover {
+    background-color: #6015FF;
+    border-color: #6015FF;
+  }
+}
+.link {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: #6015FF;
+  font-size: 1.8rem;
+  transition: color ease-in-out 300ms;
+}
 .link--secondary {
   margin-top: 3rem;
 }
 
+@media (hover: hover) {
+  .link:hover {
+    color: #7542e4;
+  }
+}
 header {
   width: 100%;
   position: absolute;
@@ -247,7 +248,7 @@ nav {
 }
 
 .logo {
-  width: 10rem;
+  width: clamp(6rem, 6rem + (1vw - 0.32rem) * 2.8409, 10rem);
 }
 
 .navlink {
@@ -280,11 +281,11 @@ video {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.3);
-  gap: 2rem;
+  gap: clamp(1rem, 1rem + (1vw - 0.32rem) * 0.7102, 2rem);
 }
 .hero__content p {
   font-size: clamp(1.8rem, 1.8rem + (1vw - 0.32rem) * 0.9943, 3.2rem);
-  margin-bottom: 3rem;
+  margin-bottom: clamp(2rem, 2rem + (1vw - 0.32rem) * 0.7102, 3rem);
 }
 .hero__content .arrow-down {
   position: absolute;
@@ -294,6 +295,21 @@ video {
   transform: scale(1.1);
 }
 
+@media (max-width: 1024px) {
+  .hero {
+    height: 60vh;
+    min-height: 40rem;
+  }
+  .arrow-down {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    height: 50vh;
+    min-height: 40rem;
+  }
+}
 .progress__grid {
   grid-template-columns: 1fr max-content 1fr;
   gap: 8rem;

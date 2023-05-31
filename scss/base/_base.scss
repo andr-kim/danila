@@ -8,7 +8,7 @@ body {
 .container {
 	max-width: 1440px;
 	margin: auto;
-	padding: 8rem clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.4205)), 4rem) 12rem;
+	padding: clamp(4rem, calc(4rem + ((1vw - 0.32rem) * 2.8409)), 8rem) clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.4205)), 4rem) clamp(8rem, calc(8rem + ((1vw - 0.32rem) * 2.8409)), 12rem);
 	@extend %flex-standart;
 	align-items: center;
 }

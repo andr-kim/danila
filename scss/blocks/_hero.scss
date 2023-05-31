@@ -17,11 +17,11 @@ video {
 	top: 0;
 	left: 0;
 	background: $clr-backgroundTransparent;
-	gap: 2rem;
+	gap: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.7102)), 2rem);
 
 	p {
 		font-size: $fontSize-XL;
-		margin-bottom: 3rem;
+		margin-bottom: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 0.7102)), 3rem);
 	}
 
 	.arrow-down {
@@ -31,5 +31,23 @@ video {
 		&:hover img {
 			transform: scale(1.1);
 		}
+	}
+}
+
+@include tablet-s {
+	.hero {
+		height: 60vh;
+		min-height: 40rem;
+	}
+
+	.arrow-down {
+		display: none;
+	}
+}
+
+@include mobile-landscape {
+	.hero {
+		height: 50vh;
+		min-height: 40rem;
 	}
 }

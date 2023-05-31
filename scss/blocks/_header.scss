@@ -18,7 +18,7 @@ nav {
 }
 
 .logo {
-	width: 10rem;
+	width: clamp(6rem, calc(6rem + ((1vw - 0.32rem) * 2.8409)), 10rem);
 }
 
 .navlink {

@@ -1,8 +1,9 @@
 // Fonts ***
 $font-default: SF;
 $fontSize-default: 1.6rem;
-$fontSize-button: 1.8rem;
-$fontSize-Huge: clamp(4.8rem, calc(4.8rem + ((1vw - 0.32rem) * 3.4091)), 9.6rem);
+$fontSize-button: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.142)), 1.8rem);
+$fontSize-btnLarge: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.4261)), 2.4rem);
+$fontSize-Huge: clamp(3.6rem, calc(3.6rem + ((1vw - 0.32rem) * 4.2614)), 9.6rem);
 $fontSize-XXXL: clamp(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 1.7045)), 4.8rem);
 $fontSize-XL: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.9943)), 3.2rem);
 $fontSize-XS: 1.8rem;
