@@ -29,7 +29,7 @@
 }
 
 @mixin s() {
-	@media (max-width: $breakpoint-880) {
+	@media (max-width: $breakpoint-885) {
 		@content;
 	}
 }
@@ -42,6 +42,18 @@
 
 @mixin mobile-portrait() {
 	@media (max-width: $breakpoint-s) {
+		@content;
+	}
+}
+
+@mixin xxxs() {
+	@media (max-width: $breakpoint-460) {
+		@content;
+	}
+}
+
+@mixin xxxxs() {
+	@media (max-width: $breakpoint-375) {
 		@content;
 	}
 }

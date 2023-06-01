@@ -77,9 +77,9 @@
 }
 
 .progress__bottom {
-	@include layout-grid(max-content max-content max-content, 0);
+	@include layout-grid(max-content max-content max-content, 1rem);
 	width: 100%;
-	margin-top: 8rem;
+	margin-top: clamp(4rem, calc(4rem + ((1vw - 0.32rem) * 2.8409)), 8rem);
 	justify-content: space-between;
 
 	&__item {
@@ -132,7 +132,97 @@
 
 @include s {
 	.progress__images__inner {
-		height: 5rem;
+		height: 15rem;
+	}
+
+	.progress .large-img {
+		height: 40rem;
+	}
+
+	.progress__grid {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.progress__grid .timeline__wrap {
+		display: none;
+	}
+
+	.progress .progress__col--first {
+		align-items: center;
+	}
+
+	.progress .progress__col--second {
+		align-items: center;
+	}
+
+	.progress .col-1 {
+		order: 0;
+	}
+	.progress .col-2 {
+		order: 1;
+		margin-bottom: 3rem;
+	}
+	.progress .col-3 {
+		order: 4;
+		margin-bottom: 3rem;
+	}
+	.progress .col-4 {
+		order: 3;
+	}
+	.progress .col-5 {
+		order: 5;
+	}
+	.progress .col-6 {
+		order: 6;
+	}
+
+	.progress .desc {
+		text-align: center;
+	}
+
+	.progress__bottom p {
+		font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.3571)), 1.6rem);
+	}
+}
+
+@include mobile-portrait {
+	.progress .year {
+		font-size: clamp(3.2rem, calc(3.2rem + ((1vw - 0.32rem) * 5.7143)), 4.8rem);
+		margin-top: -2rem;
+	}
+
+	.progress__images__inner {
+		height: 10rem;
+	}
+
+	.progress .large-img {
+		height: 30rem;
+	}
+}
+
+@include xxxs {
+	.progress__images__inner {
+		height: 8rem;
+	}
+
+	.progress .large-img {
+		height: 25rem;
+	}
+
+	.progress__bottom {
+		grid-template-columns: 1fr;
+		gap: 4rem;
+
+		img {
+			width: 7rem;
+		}
+	}
+}
+
+@include xxxxs {
+	.progress__images__inner {
+		height: 6rem;
 	}
 
 	.progress .large-img {
