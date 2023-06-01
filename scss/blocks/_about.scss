@@ -1,12 +1,13 @@
 .about__grid {
 	@extend %grid-2col;
-	gap: 5rem;
+	gap: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 2.1307)), 5rem);
 	align-items: stretch;
 
 	img {
 		height: 100%;
 		@extend %b-radiusM;
-		object-fit: cover
+		object-fit: cover;
+		object-position: center top;
 	}
 }
 
@@ -27,5 +28,23 @@
 		color: $clr-baseNormal;
 		line-height: 140%;
 		font-weight: 300;
+	}
+}
+
+@include mobile-landscape {
+	.about__grid {
+		grid-template-columns: 1fr;
+
+		img {
+			height: 40rem;
+			width: 100%;
+		}
+	}
+}
+
+@include xxxs {
+	.about__grid img {
+		margin-top: -2rem;
+		height: 30rem;
 	}
 }

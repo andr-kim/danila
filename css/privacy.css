@@ -98,7 +98,7 @@ h2, h1 {
   display: grid;
 }
 
-.networks, .copyright, nav {
+.networks, .copyright, nav ul {
   display: flex;
 }
 
@@ -145,6 +145,10 @@ h3 {
   font-weight: 400;
 }
 
+ul {
+  list-style-type: none;
+}
+
 header {
   width: 100%;
   position: absolute;
@@ -159,7 +163,7 @@ header {
   padding: 2rem clamp(2rem, 2rem + (1vw - 0.32rem) * 2.8409, 6rem);
 }
 
-nav {
+nav ul {
   flex-direction: row;
   gap: clamp(2rem, 2rem + (1vw - 0.32rem) * 1.4205, 4rem);
   align-items: stretch;

@@ -18,15 +18,27 @@
 
 	<header>
 		<div class="header__container">
-			<a href="/" class="logo"><img src="assets/icons/logo.svg" alt=""></a>
+			<a href="/" class="logo" aria-label="Нажать чтобы обновить страницу"><img src="assets/icons/logo.svg" alt="Главный логотип сайта"></a>
 			<nav>
-				<a href="#progress" class="navlink">Достижения</a>
-				<a href="#about" class="navlink">Обо мне</a>
-				<a href="#transformation" class="navlink">Трансформации</a>
-				<a href="#price" class="navlink">Стоимость</a>
-				<a href="#contacts" class="navlink">Контакты</a>
+				<ul>
+					<li>
+						<a href="#progress" class="navlink">Достижения</a>
+					</li>
+					<li>
+						<a href="#about" class="navlink">Обо мне</a>
+					</li>
+					<li>
+						<a href="#transformation" class="navlink">Трансформации</a>
+					</li>
+					<li>
+						<a href="#price" class="navlink">Стоимость</a>
+					</li>
+					<li>
+						<a href="#contacts" class="navlink">Контакты</a>
+					</li>
+				</ul>
 			</nav>
-			<a href="#contacts" class="btn btn--primary">Свяжитесь со мной</a>
+			<a href="#contacts" class="btn btn--primary" aria-label="Перейти к блоку контактных данных">Свяжитесь со мной</a>
 		</div>
 	</header>
 
@@ -35,8 +47,8 @@
 			<div class="hero__content">
 				<h1>Данила Шохин</h1>
 				<p>Персональный тренер по кроссфиту</p>
-				<a href="#contacts" class="btn btn--secondary">Получить консультацию</a>
-				<a class="arrow-down" href="#progress"><img src="assets/icons/arrow-down.svg" alt=""></a>
+				<a href="#contacts" class="btn btn--secondary" aria-label="Перейти к блоку контактных данных">Получить консультацию</a>
+				<a class="arrow-down" href="#progress" aria-label="Пролистать вниз к следующему блоку"><img src="assets/icons/arrow-down.svg" alt=""></a>
 			</div>
 			<video video autoplay loop muted playsinline webkit-playinginline>
 				<source src="assets/video/danila_video.mp4" type="video/mp4">
@@ -53,7 +65,11 @@
 						<p class="desc desc--end">Победитель первого отборочного этапа на Crossfit Games</p>
 						<div class="progress__images">
 							<div class="progress__images__inner">
-								<img src="assets/img/shokhin-01_2X.jpg" alt="">
+								<picture>
+									<source srcset="assets/img/danila_04@1x.avif 1x, assets/img/danila_04@2x.avif 2x" type="image/avif">
+									<source srcset="assets/img/danila_04@1x.webp 1x, assets/img/danila_04@2x.webp 2x" type="image/webp">
+									<img src="assets/img/danila_04@1x.jpg" srcset="assets/img/danila_04@2x.jpg 2x" alt="Мужчина несет тяжелый мешок.">
+								</picture>
 							</div>
 							<div class="progress__images__inner">
 								<img src="assets/img/shokhin-01_2X.jpg" alt="">
@@ -74,17 +90,17 @@
 							<source srcset="assets/img/danila_01_small@1x.jpg 1x, assets/img/danila_01_small@2x.jpg 2x" media="(max-width: 500px)">
 							<source srcset="assets/img/danila_01_large@1x.avif 1x, assets/img/danila_01_large@2x.avif 2x" type="image/avif">
 							<source srcset="assets/img/danila_01_large@1x.webp 1x, assets/img/danila_01_large@2x.webp 2x" type="image/webp">
-							<img class="large-img" src="assets/img/danila_01_large@1x.jpg" srcset="assets/img/danila_01_large@2x.jpg 2x" alt="Сильный мужчина, поднимающий штангу.">
+							<img class="large-img" src="assets/img/danila_01_large@1x.jpg" srcset="assets/img/danila_01_large@2x.jpg 2x" alt="Трое мужчин стоят на награждении.">
 						</picture>
 					</div>
 					<div class="col-3">
 						<picture>
-							<source srcset="assets/img/danila_01_small@1x.avif 1x, assets/img/danila_01_small@2x.avif 2x" media="(max-width: 500px)" type="image/avif">
-							<source srcset="assets/img/danila_01_small@1x.webp 1x, assets/img/danila_01_small@2x.webp 2x" media="(max-width: 500px)" type="image/webp">
-							<source srcset="assets/img/danila_01_small@1x.jpg 1x, assets/img/danila_01_small@2x.jpg 2x" media="(max-width: 500px)">
-							<source srcset="assets/img/danila_01_large@1x.avif 1x, assets/img/danila_01_large@2x.avif 2x" type="image/avif">
-							<source srcset="assets/img/danila_01_large@1x.webp 1x, assets/img/danila_01_large@2x.webp 2x" type="image/webp">
-							<img class="large-img" src="assets/img/danila_01_large@1x.jpg" srcset="assets/img/danila_01_large@2x.jpg 2x" alt="Сильный мужчина, поднимающий штангу.">
+							<source srcset="assets/img/danila_02_small@1x.avif 1x, assets/img/danila_02_small@2x.avif 2x" media="(max-width: 500px)" type="image/avif">
+							<source srcset="assets/img/danila_02_small@1x.webp 1x, assets/img/danila_02_small@2x.webp 2x" media="(max-width: 500px)" type="image/webp">
+							<source srcset="assets/img/danila_02_small@1x.jpg 1x, assets/img/danila_02_small@2x.jpg 2x" media="(max-width: 500px)">
+							<source srcset="assets/img/danila_02_large@1x.avif 1x, assets/img/danila_02_large@2x.avif 2x" type="image/avif">
+							<source srcset="assets/img/danila_02_large@1x.webp 1x, assets/img/danila_02_large@2x.webp 2x" type="image/webp">
+							<img class="large-img" src="assets/img/danila_02_large@1x.jpg" srcset="assets/img/danila_02_large@2x.jpg 2x" alt="Мужчина получает медаль и денежный приз.">
 						</picture>
 					</div>
 					<div class="timeline__wrap">
@@ -127,12 +143,12 @@
 					</div>
 					<div class="col-6">
 						<picture>
-							<source srcset="assets/img/danila_01_small@1x.avif 1x, assets/img/danila_01_small@2x.avif 2x" media="(max-width: 500px)" type="image/avif">
-							<source srcset="assets/img/danila_01_small@1x.webp 1x, assets/img/danila_01_small@2x.webp 2x" media="(max-width: 500px)" type="image/webp">
-							<source srcset="assets/img/danila_01_small@1x.jpg 1x, assets/img/danila_01_small@2x.jpg 2x" media="(max-width: 500px)">
-							<source srcset="assets/img/danila_01_large@1x.avif 1x, assets/img/danila_01_large@2x.avif 2x" type="image/avif">
-							<source srcset="assets/img/danila_01_large@1x.webp 1x, assets/img/danila_01_large@2x.webp 2x" type="image/webp">
-							<img class="large-img" src="assets/img/danila_01_large@1x.jpg" srcset="assets/img/danila_01_large@2x.jpg 2x" alt="Сильный мужчина, поднимающий штангу.">
+							<source srcset="assets/img/danila_03_small@1x.avif 1x, assets/img/danila_03_small@2x.avif 2x" media="(max-width: 500px)" type="image/avif">
+							<source srcset="assets/img/danila_03_small@1x.webp 1x, assets/img/danila_03_small@2x.webp 2x" media="(max-width: 500px)" type="image/webp">
+							<source srcset="assets/img/danila_03_small@1x.jpg 1x, assets/img/danila_03_small@2x.jpg 2x" media="(max-width: 500px)">
+							<source srcset="assets/img/danila_03_large@1x.avif 1x, assets/img/danila_03_large@2x.avif 2x" type="image/avif">
+							<source srcset="assets/img/danila_03_large@1x.webp 1x, assets/img/danila_03_large@2x.webp 2x" type="image/webp">
+							<img class="large-img" src="assets/img/danila_03_large@1x.jpg" srcset="assets/img/danila_03_large@2x.jpg 2x" alt="Мужчина поднимает штангу.">
 						</picture>
 					</div>
 				</div>
@@ -404,8 +420,8 @@
 		<section class="contacts" id="contacts">
 			<div class="container">
 				<h2>Мои контакты</h2>
-				<a href="tel:+7 999 999 99 99">+7 999 999 99 99</a>
-				<a href="mailto:danila@site.ru">danila@site.ru</a>
+				<a href="tel:+7 999 999 99 99" aria-label="Позвонить на телефон">+7 999 999 99 99</a>
+				<a href="mailto:danila@site.ru" aria-label="Перейти в почтовый клиент и написать по адресу">danila@site.ru</a>
 			</div>
 		</section>
 	</main>
@@ -413,17 +429,17 @@
 	<footer>
 		<div class="container container__footer">
 			<div class="copyright">
-				<a href="/" alt="Логотип Данилы Шохина">
-					<img src="assets/icons/logo.svg">
+				<a href="/" aria-label="Нажать чтобы обновить страницу">
+					<img src="assets/icons/logo.svg" alt="Логотип Данилы Шохина">
 				</a>
 				<span>Все права защищены © Данила Шохин</span>
 		</div>
 		<a class="link" href="#">Политика конфиденциальности</a>
 		<div class="networks">
-			<a href="#"><img src="assets/icons/vk.svg"></a>
-			<a href="#"><img src="assets/icons/telegram.svg"></a>
-			<a href="#"><img src="assets/icons/whatsapp.svg"></a>
-			<a href="#">Сделано в Net7</a>
+			<a href="#" aria-label="Перейти во вконтакт"><img src="assets/icons/vk.svg" alt="Логотип Вконтакте"></a>
+			<a href="#" aria-label="Перейти в телегам"><img src="assets/icons/telegram.svg" alt="Логотип Телеграм"></a>
+			<a href="#" aria-label="Перейти в воцап"><img src="assets/icons/whatsapp.svg" alt="Логотип Воцап"></a>
+			<a href="#" aria-label="Перейти на сайт разработчика">Сделано в Net7</a>
 		</div>
 		</div>
 	</footer>

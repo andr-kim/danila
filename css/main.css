@@ -148,7 +148,7 @@ footer, .contacts, section {
   display: grid;
 }
 
-.networks, .copyright, .price__item:nth-child(2) .price__var, .price__item:nth-child(2) div:first-of-type div, .price__item:nth-child(2), .price__item:first-of-type div:first-of-type, .style__col:last-of-type ul li, nav {
+.networks, .copyright, .price__item:nth-child(2) .price__var, .price__item:nth-child(2) div:first-of-type div, .price__item:nth-child(2), .price__item:first-of-type div:first-of-type, .style__col:last-of-type ul li, nav ul {
   display: flex;
 }
 
@@ -193,6 +193,10 @@ h2 {
 h3 {
   font-size: 1.8rem;
   font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .btn {
@@ -252,7 +256,7 @@ header {
   padding: 2rem clamp(2rem, 2rem + (1vw - 0.32rem) * 2.8409, 6rem);
 }
 
-nav {
+nav ul {
   flex-direction: row;
   gap: clamp(2rem, 2rem + (1vw - 0.32rem) * 1.4205, 4rem);
   align-items: stretch;
@@ -361,6 +365,9 @@ video {
 }
 .progress__grid .progress__images__inner {
   max-height: 22rem;
+}
+.progress__grid .progress__images__inner picture {
+  height: 100%;
 }
 .progress__grid .progress__images__inner img {
   object-fit: cover;
@@ -516,12 +523,13 @@ video {
   }
 }
 .about__grid {
-  gap: 5rem;
+  gap: clamp(2rem, 2rem + (1vw - 0.32rem) * 2.1307, 5rem);
   align-items: stretch;
 }
 .about__grid img {
   height: 100%;
   object-fit: cover;
+  object-position: center top;
 }
 
 .about__text__wrap {
@@ -540,6 +548,21 @@ video {
   font-weight: 300;
 }
 
+@media (max-width: 767px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+  .about__grid img {
+    height: 40rem;
+    width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  .about__grid img {
+    margin-top: -2rem;
+    height: 30rem;
+  }
+}
 .mission b {
   font-size: 2.8rem;
   margin-bottom: 3rem;

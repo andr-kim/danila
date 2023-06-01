@@ -11,7 +11,7 @@ header {
 	padding: 2rem clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 2.8409)), 6rem);
 }
 
-nav {
+nav ul {
 	@include layout-flex(row, clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.4205)), 4rem));
 	justify-content: center;
 	margin-top: 1.3rem;

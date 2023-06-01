@@ -43,7 +43,11 @@
 	
 			&__inner {
 				max-height: 22rem;
-	
+
+				picture {
+					height: 100%
+				}
+
 				img {
 					@extend %b-radiusM;
 					object-fit: cover;
@@ -52,6 +56,7 @@
 				}
 			}
 		}
+
 		
 		.timeline__wrap {
 			@extend %flex-standart;

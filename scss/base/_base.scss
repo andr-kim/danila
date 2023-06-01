@@ -33,3 +33,7 @@ h3 {
 section {
 	@extend %section-line;
 }
+
+ul {
+	list-style-type: none;
+}
