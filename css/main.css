@@ -554,7 +554,7 @@ video {
     grid-template-columns: 1fr;
   }
   .about__grid img {
-    height: 40rem;
+    height: 60rem;
     width: 100%;
   }
   .about__text__item b, .about__text__item p {
