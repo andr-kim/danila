@@ -44,12 +44,16 @@
 		@extend %b-radiusM;
 		object-fit: cover;
 		width: 100%;
+		height: 100%;
 	}
 
-	img:last-of-type {
-		grid-column: 1 / 3;
-		max-height: 30rem;
+	picture:last-of-type {
 		width: 100%;
-		object-position: top;
+		grid-column: 1 / 3;
+
+		img {
+			max-height: 30rem;
+			object-position: top;
+		}
 	}
 }

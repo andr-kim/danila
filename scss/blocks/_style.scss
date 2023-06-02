@@ -36,6 +36,8 @@
 	img {
 		width: 100%;
 		@extend %b-radiusM;
+		height: 20rem;
+		object-fit: cover;
 	}
 }
 
