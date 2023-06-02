@@ -51,7 +51,7 @@
 				img {
 					@extend %b-radiusM;
 					object-fit: cover;
-					object-position: center;
+					object-position: center top;
 					@extend %hundred-percent;
 				}
 			}

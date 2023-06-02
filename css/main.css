@@ -371,7 +371,7 @@ video {
 }
 .progress__grid .progress__images__inner img {
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
 }
 .progress__grid .timeline__wrap {
   align-items: center;
