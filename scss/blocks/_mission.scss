@@ -1,16 +1,23 @@
 .mission {
 	b {
-		font-size: 2.8rem;
+		font-size: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.7102)), 2.8rem);
+		@extend %text-center;
 		margin-bottom: 3rem;
 	}
 
 	p {
 		@extend %text-center;
 		white-space: 50px;
-		font-size: 2.4rem;
-		width: 65ch;
+		font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.5682)), 2.4rem);
+		max-width: 65ch;
 		line-height: 130%;
 		font-weight: 300;
 		@extend %text-gradientVertical;
+	}
+}
+
+@include xxxs {
+	.mission b {
+		margin-top: -2rem;
 	}
 }

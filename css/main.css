@@ -133,7 +133,7 @@ footer, .contacts, section {
   background-clip: text;
 }
 
-.mission p, .btn, h2, h1 {
+.mission p, .mission b, .btn, h2, h1 {
   text-align: center;
 }
 
@@ -525,9 +525,10 @@ video {
 .about__grid {
   gap: clamp(2rem, 2rem + (1vw - 0.32rem) * 2.1307, 5rem);
   align-items: stretch;
+  grid-template-rows: 1fr;
 }
 .about__grid img {
-  height: 100%;
+  min-height: 100%;
   object-fit: cover;
   object-position: center top;
 }
@@ -540,7 +541,7 @@ video {
   gap: 1rem;
 }
 .about__text__item b, .about__text__item p {
-  font-size: 1.8rem;
+  font-size: clamp(1.6rem, 1.6rem + (1vw - 0.32rem) * 0.142, 1.8rem);
 }
 .about__text__item p {
   color: #a2a1a1;
@@ -556,6 +557,9 @@ video {
     height: 40rem;
     width: 100%;
   }
+  .about__text__item b, .about__text__item p {
+    text-align: center;
+  }
 }
 @media (max-width: 460px) {
   .about__grid img {
@@ -564,17 +568,22 @@ video {
   }
 }
 .mission b {
-  font-size: 2.8rem;
+  font-size: clamp(1.8rem, 1.8rem + (1vw - 0.32rem) * 0.7102, 2.8rem);
   margin-bottom: 3rem;
 }
 .mission p {
   white-space: 50px;
-  font-size: 2.4rem;
-  width: 65ch;
+  font-size: clamp(1.6rem, 1.6rem + (1vw - 0.32rem) * 0.5682, 2.4rem);
+  max-width: 65ch;
   line-height: 130%;
   font-weight: 300;
 }
 
+@media (max-width: 460px) {
+  .mission b {
+    margin-top: -2rem;
+  }
+}
 .specialization p {
   font-size: 2rem;
   font-weight: 300;

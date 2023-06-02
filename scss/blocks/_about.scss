@@ -2,9 +2,10 @@
 	@extend %grid-2col;
 	gap: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 2.1307)), 5rem);
 	align-items: stretch;
+	grid-template-rows: 1fr;
 
 	img {
-		height: 100%;
+		min-height: 100%;
 		@extend %b-radiusM;
 		object-fit: cover;
 		object-position: center top;
@@ -21,7 +22,7 @@
 	gap: 1rem;
 
 	b, p {
-		font-size: 1.8rem;
+		font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.142)), 1.8rem);
 	}
 
 	p {
@@ -38,6 +39,12 @@
 		img {
 			height: 40rem;
 			width: 100%;
+		}
+	}
+
+	.about__text__item {
+		b, p {
+			text-align: center;
 		}
 	}
 }
