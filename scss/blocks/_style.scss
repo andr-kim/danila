@@ -1,13 +1,14 @@
 .style__grid {
-	@include layout-grid(1.5fr 1fr, 5rem);
+	@include layout-grid(1.5fr 1fr, clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 2.8409)), 5rem));
 	@extend %width-100;
-	height: 63rem;
+	min-height: 63rem;
 }
 
 .style__col:first-of-type {
 	@extend %width-100;
 	overflow: auto;
 	padding-right: 2rem;
+	max-height: 63rem;
 
 	&::-webkit-scrollbar {
 		background-color: $clr-baseUltraDark;
@@ -64,5 +65,69 @@
 				@extend %text-gradientHorizont;
 			}
 		}
+	}
+}
+
+@include laptop {
+	.style__col:first-of-type {
+		max-height: 70rem;
+	}
+}
+
+@include tablet-l {
+	.style__col:first-of-type {
+		max-height: 74rem;
+	}
+}
+
+@include tablet-s {
+	.style__col:first-of-type {
+		max-height: 89rem;
+	}
+}
+
+@include s {
+	.style__photo-wrap {
+		img {
+			height: 15rem;
+		}
+	}
+
+	.style__col:first-of-type {
+		max-height: 105rem;
+	}
+}
+
+@include mobile-landscape {
+	.style__grid {
+		grid-template-columns: 1fr;
+	}
+
+	.style__col:first-of-type {
+		max-height: 30rem;
+
+		p {
+			font-size: 1.8rem;
+			text-align: center;
+		}
+	}
+
+	.style__col:last-of-type {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		b {
+			font-size: 2rem;
+			text-align: center;
+		}
+		ul li {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@include xxxs {
+	.style h2 {
+		margin-bottom: 2rem;
 	}
 }
