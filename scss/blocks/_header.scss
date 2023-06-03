@@ -1,5 +1,5 @@
 header {
-	width: 100%;
+	@extend %width-100;
 	position: absolute;
 	z-index: 30;
 	@extend %animation-appearance;

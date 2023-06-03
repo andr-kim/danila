@@ -1,7 +1,7 @@
 .price {
 	&__grid {
 		@include layout-grid(max-content 1fr, 2rem, start);
-		width: 100%;
+		@extend %width-100;
 	}
 
 	&__item:first-of-type {

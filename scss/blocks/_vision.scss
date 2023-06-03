@@ -6,13 +6,13 @@
 
 .vision__grid {
 	@include layout-grid(1.5fr 1fr, 5rem);
-	width: 100%;
+	@extend %width-100;
 	margin-top: 4rem;
 	height: 50rem;
 }
 
 .vision__col:first-of-type {
-	width: 100%;
+	@extend %width-100;
 	overflow: auto;
 	padding-right: 2rem;
 
@@ -43,12 +43,11 @@
 	img {
 		@extend %b-radiusM;
 		object-fit: cover;
-		width: 100%;
-		height: 100%;
+		@extend %hundred-percent;
 	}
 
 	picture:last-of-type {
-		width: 100%;
+		@extend %width-100;
 		grid-column: 1 / 3;
 
 		img {

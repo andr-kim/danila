@@ -1,6 +1,6 @@
 .plus {
 	&__grid {
-		width: 100%;
+		@extend %width-100;
 		@extend %grid-3col;
 		grid-template-rows: 1fr 1fr;
 		gap: 1rem;
