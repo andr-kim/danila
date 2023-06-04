@@ -30,3 +30,26 @@
 	}
 }
 
+@include tablet-s {
+	.plus__grid {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	.plus__card h3 {
+		font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.3226)), 1.8rem);
+	}
+}
+
+@include mobile-portrait {
+	.plus__grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr);
+	}
+}
+
+@include xxxs {
+	.plus h2 {
+		margin-bottom: 2rem;
+	}
+}

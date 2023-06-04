@@ -2,10 +2,11 @@
 	font-size: 3.2rem;
 	font-weight: 800;
 	@extend %text-gradientHorizont;
+	@extend %text-center;
 }
 
 .vision__grid {
-	@include layout-grid(1.5fr 1fr, 5rem);
+	@include layout-grid(1.5fr 1fr, clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 2.8409)), 5rem));
 	@extend %width-100;
 	margin-top: 4rem;
 	height: 50rem;
@@ -54,5 +55,30 @@
 			max-height: 30rem;
 			object-position: top;
 		}
+	}
+}
+
+@include mobile-landscape {
+	.vision__quote {
+		font-size: 2rem;
+	}
+	.vision__grid {
+		grid-template-columns: 1fr;
+		height: auto;
+		gap: 3rem;
+	}
+
+	.vision__col:first-of-type {
+		order: 1;
+		p {
+			font-size: 1.8rem;
+			text-align: center;
+		}
+	}
+}
+
+@include xxxs {
+	.vision h2 {
+		margin-bottom: 2rem;
 	}
 }

@@ -1,10 +1,22 @@
 .transformation {
 	&__grid {
 		@extend %grid-3col;
-		gap: 2rem;
+		gap: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.8929)), 2rem);
 
 		img {
 			@extend %b-radiusM;
 		}
+	}
+}
+
+@include mobile-portrait {
+	.transformation__grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@include xxxs {
+	.transformation h2 {
+		margin-bottom: 2rem;
 	}
 }

@@ -1,33 +1,21 @@
 html {
   height: 100%;
-  box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
 }
 
 *, 
 *::before, 
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: none;
-}
-
-body {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-}
-
-main {
-	flex-grow: 1;
-}
-
-a {
-	display: block;
-	text-decoration: none;
-	color: inherit;
+  font: inherit;
 }
 
 img, picture, video, canvas, svg, span {
@@ -35,6 +23,8 @@ img, picture, video, canvas, svg, span {
 	max-width: 100%;
 }
 
-textarea {
-	font-family: inherit;
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
 }

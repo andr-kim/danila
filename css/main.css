@@ -42,34 +42,22 @@
 }
 html {
   height: 100%;
-  box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: none;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex-grow: 1;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
+  font: inherit;
 }
 
 img, picture, video, canvas, svg, span {
@@ -77,8 +65,10 @@ img, picture, video, canvas, svg, span {
   max-width: 100%;
 }
 
-textarea {
-  font-family: inherit;
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .container__footer, .price__grid, .plus__grid, .vision__col:last-of-type picture:last-of-type, .vision__col:first-of-type, .vision__grid, .style__photo-wrap img, .style__col:first-of-type, .style__grid, .about__grid img, .progress__bottom, .progress__grid .large-img, .progress__grid, header, .vision__col:last-of-type img, .progress__grid .progress__images__inner img, .progress__grid .progress__images, .hero__content, video {
@@ -135,7 +125,7 @@ footer, .contacts, section {
   background-clip: text;
 }
 
-.mission p, .mission b, .btn, h2, h1 {
+.vision__quote, .mission p, .mission b, .btn, h2, h1 {
   text-align: center;
 }
 
@@ -776,7 +766,7 @@ video {
 
 .vision__grid {
   grid-template-columns: 1.5fr 1fr;
-  gap: 5rem;
+  gap: clamp(1rem, 1rem + (1vw - 0.32rem) * 2.8409, 5rem);
   align-items: stretch;
   margin-top: 4rem;
   height: 50rem;
@@ -815,6 +805,28 @@ video {
   object-position: top;
 }
 
+@media (max-width: 767px) {
+  .vision__quote {
+    font-size: 2rem;
+  }
+  .vision__grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 3rem;
+  }
+  .vision__col:first-of-type {
+    order: 1;
+  }
+  .vision__col:first-of-type p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+@media (max-width: 460px) {
+  .vision h2 {
+    margin-bottom: 2rem;
+  }
+}
 .plus__grid {
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
@@ -838,8 +850,38 @@ video {
   align-items: end;
 }
 
+@media (max-width: 1024px) {
+  .plus__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .plus__card h3 {
+    font-size: clamp(1.6rem, 1.6rem + (1vw - 0.32rem) * 0.3226, 1.8rem);
+  }
+}
+@media (max-width: 600px) {
+  .plus__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+@media (max-width: 460px) {
+  .plus h2 {
+    margin-bottom: 2rem;
+  }
+}
 .transformation__grid {
-  gap: 2rem;
+  gap: clamp(1rem, 1rem + (1vw - 0.32rem) * 0.8929, 2rem);
+}
+@media (max-width: 600px) {
+  .transformation__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 460px) {
+  .transformation h2 {
+    margin-bottom: 2rem;
+  }
 }
 .price__grid {
   grid-template-columns: max-content 1fr;
