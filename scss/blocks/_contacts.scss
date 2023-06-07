@@ -2,7 +2,7 @@
 	@extend %section-line;
 
 	a {
-		font-size: 3.6rem;
+		font-size: clamp(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 0.8523)), 3.6rem);
 		font-weight: 500;
 		color: $clr-baseNormal;
 		transition: color ease-in-out 300ms;
@@ -14,5 +14,11 @@
 		&:hover {
 			color: $clr-light;
 		}
+	}
+}
+
+@include xxxs {
+	.contacts h2 {
+		margin-bottom: 2rem;
 	}
 }

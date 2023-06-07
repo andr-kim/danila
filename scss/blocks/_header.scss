@@ -2,7 +2,6 @@ header {
 	@extend %width-100;
 	position: absolute;
 	z-index: 30;
-	@extend %animation-appearance;
 }
 
 .header__container {

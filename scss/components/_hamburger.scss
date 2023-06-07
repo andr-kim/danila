@@ -1,0 +1,60 @@
+.nav-toggle {
+	display: none;
+}
+
+.nav-toggle:checked ~ nav {
+	transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav .navlink {
+	opacity: 1;
+	transition: opacity 250ms ease-in-out 250ms;
+}
+
+.burger-menu {
+	height: 4rem;
+	width: 4rem;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: transform ease-in-out 300ms;
+}
+
+.burger-menu span,
+.burger-menu span::before,
+.burger-menu span::after {
+	display: block;
+	background-color: blueviolet;
+	height: .2rem;
+	width: 100%;
+	border-radius: 10rem;
+	position: relative;
+	transition: transform ease-in-out 300ms, background-color ease-in-out 300ms;
+}
+
+.burger-menu span::before,
+.burger-menu span::after {
+	content: '';
+	position: absolute;
+}
+
+.burger-menu span::before {
+	transform: translateY(-1.2rem);
+}
+
+.burger-menu span::after {
+	transform: translateY(1.2rem);
+}
+
+/* animation */
+.burger-menu.open span {
+	background-color: transparent;
+}
+
+.burger-menu.open span::before {
+	transform: rotate(45deg) ;
+}
+
+.burger-menu.open span::after {
+	transform: rotate(-45deg);
+}
