@@ -1,14 +1,14 @@
 .style__grid {
 	@include layout-grid(1.5fr 1fr, clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 2.8409)), 5rem));
 	@extend %width-100;
-	min-height: 63rem;
+	min-height: 50rem;
 }
 
 .style__col:first-of-type {
 	@extend %width-100;
 	overflow: auto;
 	padding-right: 2rem;
-	max-height: 63rem;
+	max-height: 50rem;
 
 	&::-webkit-scrollbar {
 		background-color: $clr-baseUltraDark;

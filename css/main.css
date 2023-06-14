@@ -781,13 +781,13 @@ video {
   grid-template-columns: 1.5fr 1fr;
   gap: clamp(1rem, 1rem + (1vw - 0.32rem) * 2.8409, 5rem);
   align-items: stretch;
-  min-height: 63rem;
+  min-height: 50rem;
 }
 
 .style__col:first-of-type {
   overflow: auto;
   padding-right: 2rem;
-  max-height: 63rem;
+  max-height: 50rem;
 }
 .style__col:first-of-type::-webkit-scrollbar {
   background-color: #171717;
@@ -1116,7 +1116,15 @@ video {
   transition: color ease-in-out 300ms;
 }
 .contacts a:last-of-type {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  border: solid 0.2rem #a2a1a1;
+  padding: 2rem 3rem 2.1rem;
+  border-radius: 10rem;
+  font-size: clamp(1.8rem, 1.8rem + (1vw - 0.32rem) * 0.4261, 2.4rem);
+  font-weight: 400;
+}
+.contacts a:last-of-type:hover {
+  border: solid 0.2rem white;
 }
 .contacts a:hover {
   color: white;
