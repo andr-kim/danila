@@ -4,31 +4,70 @@
 		@extend %grid-3col;
 		grid-template-rows: 1fr 1fr;
 		gap: 1rem;
+		perspective: 1000px;
 	}
 
 	&__card {
-		@extend %flex-standart;
-		justify-content: space-between;
-		background-color: $clr-baseUltraDark;
-		@extend %b-radiusM;
-		padding: 2rem;
+		position: relative;
+		transform-style: preserve-3d;
+		min-height: 27rem;
 
-		span {
-			font-size: 1.8rem;
-			font-weight: 800;
-			@extend %text-gradientHorizont;
-			width: fit-content;
-			padding: .8rem;
-			border: solid .2rem grey;
-			@extend %b-radiusXL;
+		&--front {
+			padding: 2rem;
+			@extend %b-radiusM;
+			background-color: $clr-baseUltraDark;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+			backface-visibility: hidden;
+			transition: transform .5s ease-in-out;
+
+			span {
+				font-size: 1.8rem;
+				font-weight: 800;
+				@extend %text-gradientHorizont;
+				width: fit-content;
+				padding: .8rem;
+				border: solid .2rem grey;
+				@extend %b-radiusXL;
+			}
+
+			div {
+				margin-top: 4rem;
+				@include layout-grid(1fr max-content, 1rem, end);
+			}
 		}
 
-		div {
-			margin-top: 4rem;
-			@include layout-grid(1fr max-content, 1rem, end);
+		&--back {
+			color: grey;
+			font-size: 1.6rem;
+			display: flex;
+			height: 100%;
+			padding: 2rem;
+			@extend %b-radiusM;
+			background-color: $clr-baseUltraDark;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			backface-visibility: hidden;
+			transform: rotateY(180deg);
+			transition: transform .5s ease-in-out;
+		}
+
+		&:hover &--front {
+			transform: rotateY(-180deg);
+		}
+
+		&:hover &--back {
+			transform: rotateY(0);
 		}
 	}
 }
+
+
+
 
 @include tablet-s {
 	.plus__grid {

@@ -14,7 +14,7 @@
 			span {
 				font-size: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.9886)), 4.8rem);
 				font-weight: 700;
-				@extend %text-gradientHorizont;
+				color: $clr-metall;
 				margin-left: -8rem;
 			}
 		}
@@ -39,7 +39,7 @@
 				span {
 					font-size: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.9886)), 4.8rem);
 					font-weight: 700;
-					@extend %text-gradientHorizont;
+					color: $clr-metall;
 					margin-left: -8rem;
 				}
 			}
